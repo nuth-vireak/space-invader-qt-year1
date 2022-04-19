@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1132</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Space Invader</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow{
+background-color: rgb(0, 0, 0);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget_rectangle" native="true">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>297</y>
+     <width>251</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid white;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_highestScore">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>17</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>23</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>HIGHEST SCORE:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>421</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>27</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;
+color: white;
+Text-align:left</string>
+   </property>
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_aboutUs">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>384</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>27</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;
+color: white;
+Text-align:left</string>
+   </property>
+   <property name="text">
+    <string>ABOUT US</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_arrow" native="true">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>317</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/image/pointButton.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_startGame">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>310</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>27</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;
+color: white;
+Text-align:left</string>
+   </property>
+   <property name="text">
+    <string>START GAME</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>77</y>
+     <width>1131</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_title">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget_title" native="true">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/image/title.png);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_highScoreNum">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>17</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>23</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>1234</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_option">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>347</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>000webfont</family>
+     <pointsize>27</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;
+color: white;
+Text-align:left</string>
+   </property>
+   <property name="text">
+    <string>OPTION</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_startGame</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_option</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_aboutUs</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>545</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

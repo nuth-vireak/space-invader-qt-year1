@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>image/background.png</file>
+        <file>image/plane1.png</file>
+        <file>image/enemy.png</file>
+        <file>image/flaming_meteor.png</file>
+        <file>image/health.png</file>
+        <file>image/blur.png</file>
+        <file>image/enemy1.png</file>
+        <file>image/enemy2.png</file>
+        <file>image/enemy3.png</file>
+        <file>image/enemy4.png</file>
+        <file>image/fee logo.png</file>
+        <file>image/Group 6.png</file>
+        <file>image/instruction.png</file>
+        <file>image/left.png</file>
+        <file>image/logo.png</file>
+        <file>image/plane2.png</file>
+        <file>image/plane3.png</file>
+        <file>image/plane4.png</file>
+        <file>image/pointButton.png</file>
+        <file>image/Rectangle 141.png</file>
+        <file>image/resume.png</file>
+        <file>image/RUPP_logo 1.png</file>
+        <file>image/title.png</file>
+        <file>image/wave1.png</file>
+        <file>image/wave2.png</file>
+        <file>image/wave3.png</file>
+        <file>image/wave4.png</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>font/000webfont Regular.ttf</file>
+    </qresource>
+</RCC>
